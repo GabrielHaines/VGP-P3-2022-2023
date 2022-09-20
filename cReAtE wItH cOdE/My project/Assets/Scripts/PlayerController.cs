@@ -13,8 +13,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //we will write the vehicle move script below this >:)
+        
         transform.Translate(Vector3.forward*Time.deltaTime* 20);
+        //^^^^Vehicle move script^^^^
         
     }
 }
