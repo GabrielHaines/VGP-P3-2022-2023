@@ -5,15 +5,14 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     public GameObject player;
+    
+    
     void Update()
-    {
+   {
     transform.position = player.transform.position + new Vector3(0 , 5 , -7);
-    }
+   }
     // Offseted the camera behind the player^^^^^
-    void Start()
-    {
-        
-    }
+  
 
    
 }
