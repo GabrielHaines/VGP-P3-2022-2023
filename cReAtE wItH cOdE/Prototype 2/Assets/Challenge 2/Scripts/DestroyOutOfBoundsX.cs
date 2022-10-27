@@ -14,11 +14,10 @@ public class DestroyOutOfBoundsX : MonoBehaviour
         if (transform.position.x > topBound)
         {
             Destroy(gameObject);
-        } 
-        // Destroy balls if y position is less than bottomLimit
-         else if (transform.position.z < lowerBound)
+        }  else if (transform.position.z < lowerBound)
         {
-            Destroy(gameObject);
+        Debug.Log("Game Over");
+        Destroy(gameObject);
         }
 
     }

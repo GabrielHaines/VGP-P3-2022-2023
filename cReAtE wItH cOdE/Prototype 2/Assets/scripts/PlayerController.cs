@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
    public GameObject projectilePrefab;
    public float horizontalInput;
    public float speed = 10.0f;
+   public float xRange = 40; 
        // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +15,6 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    
-   public float xRange = 10; 
     void Update()
     {
       if (transform.position.x < xRange)
