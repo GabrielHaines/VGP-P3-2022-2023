@@ -402,7 +402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.18
+      value: 7.03
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -459,6 +459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbcf3d81027f61040876b1fbec54ae25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpForce: 10
 --- !u!65 &1987085465
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -470,8 +471,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.41, y: 6.34, z: 1.51}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.41, y: 3.3056839, z: 1.51}
+  m_Center: {x: -0, y: 1.67, z: 0}
 --- !u!54 &1987085466
 Rigidbody:
   m_ObjectHideFlags: 0
