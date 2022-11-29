@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 835818921}
   - component: {fileID: 835818920}
   - component: {fileID: 835818922}
+  - component: {fileID: 835818923}
   m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
@@ -398,6 +399,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43a2554b1fe3ea4fbf840e22e7fae49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &835818923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835818919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9633c05d09d34b94ab73118adaa763e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1445506506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -419,7 +432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0.012
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -484,6 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2966e9180d3a1784cb411104050cee0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstaclePrefab: {fileID: 6717401023026044021, guid: 4fb37263bce6f1343b3dd07b38cbc0ce, type: 3}
 --- !u!4 &1651320128
 Transform:
   m_ObjectHideFlags: 0
@@ -504,21 +518,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
   m_PrefabInstance: {fileID: 1445506506}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1987085464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987085463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbcf3d81027f61040876b1fbec54ae25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 10
-  gravityModifier: 0.5
-  isOnGround: 1
 --- !u!65 &1987085465
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -530,8 +529,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.41, y: 3.3056839, z: 1.51}
-  m_Center: {x: -0, y: 1.67, z: 0}
+  m_Size: {x: 3.36, y: 3.477035, z: 1.4274505}
+  m_Center: {x: 1.4246004e-16, y: 1.7143242, z: 0.041274726}
 --- !u!54 &1987085466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -546,8 +545,23 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &1987085469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987085463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbcf3d81027f61040876b1fbec54ae25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 10
+  gravityModifier: 1
+  isOnGround: 1
 --- !u!1 &2014335011
 GameObject:
   m_ObjectHideFlags: 0

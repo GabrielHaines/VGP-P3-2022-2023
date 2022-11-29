@@ -26,8 +26,7 @@ public class PlayerControllerScript : MonoBehaviour
             isOnGround = false;
         }
     }
-    private void onCollisionEnter(Collision collision)
-    {
+    private void onCollisionEnter(Collision collision){
         isOnGround = true;
     }
 
