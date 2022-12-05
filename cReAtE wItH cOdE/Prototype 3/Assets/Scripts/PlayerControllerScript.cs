@@ -10,12 +10,14 @@ public class PlayerControllerScript : MonoBehaviour
     public float gravityModifier;
     public bool isOnGround = true; 
     public bool gameOver = false;
+    private PlayerControllerScript playerControllerScript;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifier;
+        playerControllerScript = gameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -27,9 +29,14 @@ public class PlayerControllerScript : MonoBehaviour
             isOnGround = false;
         }
     }
-    private void onCollisionEnter(Collision collision){
+    private void onCollisionEnter(Collision collision)
+    {
         isOnGround = true;
-        if(collision.GameObject.CompareTag("Ground"))
+        if(collision.gameObject.CompareTag("Ground"))
+        {
+        Debug.Log("Game Over");
+        gameOver = true;
+        }    
         
     }
 
