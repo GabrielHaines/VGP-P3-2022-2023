@@ -294,7 +294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.92, y: 4, z: -16.66}
+  m_LocalPosition: {x: 23.92, y: 4, z: -38.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -436,6 +436,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 100046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -560,7 +564,7 @@ MonoBehaviour:
   jumpForce: 10
   gravityModifier: 1
   isOnGround: 1
-  gameOver: 1
+  gameOver: 0
 --- !u!54 &1987085472
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -591,7 +595,7 @@ GameObject:
   - component: {fileID: 2014335012}
   m_Layer: 9
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -607,7 +611,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Size: {x: 10, y: 0, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2014335013
 MeshRenderer:
@@ -683,6 +687,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6717401023026044021, guid: 4fb37263bce6f1343b3dd07b38cbc0ce, type: 3}
       propertyPath: m_Name
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717401023026044021, guid: 4fb37263bce6f1343b3dd07b38cbc0ce, type: 3}
+      propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6717401023026358357, guid: 4fb37263bce6f1343b3dd07b38cbc0ce, type: 3}
@@ -775,5 +783,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.0346549, z: 3.4586449}
+  m_Center: {x: 0, y: 1.0563024, z: 0.008058786}
