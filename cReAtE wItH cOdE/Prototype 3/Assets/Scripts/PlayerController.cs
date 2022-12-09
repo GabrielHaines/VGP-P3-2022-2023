@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
             isOnGround = false;
         }
     }
-    private void onCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
        if(collision.gameObject.CompareTag("Ground"))
        {
